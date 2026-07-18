@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Torch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop>
+        <source src="audio/the-saxophones-getting-louder.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <h1>🔦 Premium Torch</h1>
+        <p>Experience the world's smartest flashlight.</p>
+        <button id="torchBtn">Turn ON</button>
+    </div>
+    <div id="lightOverlay"></div>
+    <div id="premiumPopup" class="popup">
+
+        <div class="popup-content">
+
+            <h2>🌟 Premium Feature</h2>
+
+            <p>
+                Turning OFF the flashlight is available only in the
+                <strong>Premium Plan.</strong>
+            </p>
+
+            <h3>₹6'7/month</h3>
+
+            <button id="upgradeBtn" class="subscribe">
+                Upgrade Now
+            </button>
+
+            <button id="closePopup">
+                Never
+            </button>
+
+            <small>
+                *By continuing, you agree to remain illuminated forever.
+            </small>
+
+        </div>
+
+    </div>
+
+    <!-- Face Verification Popup -->
+    <div id="facePopup" class="popup">
+
+        <div class="popup-content">
+
+            <h2>🔒 Premium Face Verification</h2>
+
+            <video
+              id="camera"
+              autoplay
+              playsinline
+              muted>
+            </video>
+
+            <br><br>
+
+            <button id="scanBtn" class="subscribe">
+                Start Verification
+            </button>
+
+            <p id="scanStatus"></p>
+
+            <button id="closeFacePopup" style="display:none;">
+                OK
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
